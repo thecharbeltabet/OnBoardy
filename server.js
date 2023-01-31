@@ -7,6 +7,7 @@ const tagsRoutes = require('./routes/routesTag.js')
 const staffRoutes = require('./routes/routesStaff.js')
 const taskRoutes = require('./routes/routesTask.js')
 const attachmentRoutes = require('./routes/routesAttachment.js')
+const studentRoutes = require('./routes/routesStudent.js')
 
 // express app
 const app = express()
@@ -25,6 +26,7 @@ app.use('/api/', tagsRoutes)
 app.use('/api/', staffRoutes)
 app.use('/api/', taskRoutes)
 app.use('/api/', attachmentRoutes)
+app.use('/api/', studentRoutes)
 
 
 mongoose.set('strictQuery', false);

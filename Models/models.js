@@ -52,6 +52,15 @@ const StaffSchema = new mongoose.Schema({
   image: String
 });
 
+const StudentSchema = new mongoose.Schema({
+  id: String,
+  firstName: String,
+  lastName: String,
+  email: String,
+  password: String,
+  image: String
+});
+
 // const StudentSchema = new mongoose.Schema({
 //   id: String,
 //   firstName: String,
@@ -100,6 +109,7 @@ const AttachmentSchema = new mongoose.Schema({
 module.exports = {
 
   Blog: mongoose.model("Blog", BlogSchema),
+  Student: mongoose.model("Student", StudentSchema),
   Tag: mongoose.model("Tag", TagSchema),
   Staff: mongoose.model("Staff", StaffSchema),
   Task: mongoose.model("Task", TaskSchema),
